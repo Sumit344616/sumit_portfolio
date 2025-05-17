@@ -16,25 +16,26 @@ const About = () => {
               <img src="/assets/img/profile-img.jpg" className="img-fluid" alt="" />
             </div>
             <div className="col-lg-5 content">
-              <h2>Professional Photographer from New York</h2>
+              <h2> MERN STACK DEVELOPER FROM AHMEDABAD</h2>
               <p className="fst-italic py-3">
-                Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore
-                magna aliqua.
+                 Experienced and results-driven Full Stack Developer with a strong
+ foundation in MERN stack technologies (MongoDB, Express.js, React.js,
+ Node.js)
               </p>
               <div className="row">
                 <div className="col-lg-6">
                   <ul>
-                    <li><i className="bi bi-chevron-right"></i> <strong>Birthday:</strong> <span>1 May 1995</span></li>
-                    <li><i className="bi bi-chevron-right"></i> <strong>Website:</strong> <span>www.example.com</span></li>
-                    <li><i className="bi bi-chevron-right"></i> <strong>Phone:</strong> <span>+123 456 7890</span></li>
-                    <li><i className="bi bi-chevron-right"></i> <strong>City:</strong> <span>New York, USA</span></li>
+                    <li><i className="bi bi-chevron-right"></i> <strong>Birthday:</strong> <span>30 March 2003</span></li>
+                    <li><i className="bi bi-chevron-right"></i> <strong>Website:</strong> <span>https://sumit-portfolio-five-drab.vercel.app/</span></li>
+                    <li><i className="bi bi-chevron-right"></i> <strong>Phone:</strong> <span>+91 6353899544</span></li>
+                    <li><i className="bi bi-chevron-right"></i> <strong>City:</strong> <span>Ahmedabad, INDIA</span></li>
                   </ul>
                 </div>
                 <div className="col-lg-6">
                   <ul>
-                    <li><i className="bi bi-chevron-right"></i> <strong>Age:</strong> <span>30</span></li>
-                    <li><i className="bi bi-chevron-right"></i> <strong>Degree:</strong> <span>Master</span></li>
-                    <li><i className="bi bi-chevron-right"></i> <strong>Email:</strong> <span>email@example.com</span></li>
+                    <li><i className="bi bi-chevron-right"></i> <strong>Age:</strong> <span>22</span></li>
+                    <li><i className="bi bi-chevron-right"></i> <strong>Degree:</strong> <span>Bsc.IT(Information Technology)</span></li>
+                    <li><i className="bi bi-chevron-right"></i> <strong>Email:</strong> <span>sadhusumit30@gmail.com</span></li>
                     <li><i className="bi bi-chevron-right"></i> <strong>Freelance:</strong> <span>Available</span></li>
                   </ul>
                 </div>

@@ -105,7 +105,7 @@ const PortfolioDetails = () => {
                     <li><strong>Category</strong>: Web design</li>
                     <li><strong>Client</strong>: ASU Company</li>
                     <li><strong>Project date</strong>: 01 March, 2020</li>
-                    <li><strong>Project URL</strong>: <a href="#">www.example.com</a></li>
+                    <li><strong>Project URL</strong>: <a href="#">https://sumit-portfolio-five-drab.vercel.app/</a></li>
                   </ul>
                 </div>
                 <div className="portfolio-description" data-aos="fade-up" data-aos-delay="300">

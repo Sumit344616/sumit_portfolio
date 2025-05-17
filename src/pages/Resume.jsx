@@ -8,34 +8,29 @@ const Resume = () => {
         <div className="container">
           <div className="section-header">
             <h2>Resume</h2>
-            <p>Aperiam dolorum et et wuia molestias qui eveniet numquam nihil porro incidunt dolores placeat sunt id nobis omnis tiledo stran delop</p>
+            <p>Full Stack Developer</p>
           </div>
 
           <div className="row">
             <div className="col-lg-6">
               <h3 className="resume-title">Summary</h3>
               <div className="resume-item pb-0">
-                <h4>Kelly Anderson</h4>
-                <p><em>Innovative and deadline-driven photographer with 3+ years of experience designing and developing user-centered digital/print marketing material from initial concept to final, polished deliverable.</em></p>
+                <h4>Sumit Sadhu</h4>
+                <p><em> Experienced and results-driven Full Stack Developer with a strong
+ foundation in MERN stack technologies (MongoDB, Express.js, React.js,
+ Node.js).</em></p>
                 <ul>
-                  <li>Portland par 127,Orlando, FL</li>
-                  <li>(123) 456-7891</li>
-                  <li>alice.barkley@example.com</li>
+                  <li>Ahmedabad,Gujarat, INDIA</li>
+                  <li>+91 6353899544</li>
+                  <li>sadhusumit30@gmail.com</li>
                 </ul>
               </div>
 
               <h3 className="resume-title">Education</h3>
               <div className="resume-item">
-                <h4>Master of Fine Arts &amp; Graphic Design</h4>
-                <h5>2015 - 2016</h5>
-                <p><em>Rochester Institute of Technology, Rochester, NY</em></p>
-                <p>Qui deserunt veniam. Et sed aliquam labore tempore sed quisquam iusto autem sit. Ea vero voluptatum qui ut dignissimos deleniti nerada porti sand markend</p>
-              </div>
-              <div className="resume-item">
-                <h4>Bachelor of Fine Arts &amp; Graphic Design</h4>
-                <h5>2010 - 2014</h5>
-                <p><em>Rochester Institute of Technology, Rochester, NY</em></p>
-                <p>Quia nobis sequi est occaecati aut. Repudiandae et iusto quae reiciendis et quis. Eius vel ratione eius unde vitae rerum voluptates asperiores voluptatem Earum molestiae consequatur neque etlon sader mart dila</p>
+                <h4>Bsc.IT(Information Technology)</h4>
+                <h5>2020 - 2023</h5>
+                <p><em>Gujarat Technological University, Ahmedabad, Gujarat, INDIA</em></p>
               </div>
             </div>
 
@@ -43,8 +38,8 @@ const Resume = () => {
               <h3 className="resume-title">Professional Experience</h3>
               <div className="resume-item">
                 <h4>Senior graphic design specialist</h4>
-                <h5>2019 - Present</h5>
-                <p><em>Experion, New York, NY </em></p>
+                <h5>2025 - Present</h5>
+                <p><em>Vasundhara Infotech , Surat </em></p>
                 <ul>
                   <li>Lead in the design, development, and implementation of the graphic, layout, and production communication materials</li>
                   <li>Delegate tasks to the 7 members of the design team and provide counsel on all aspects of the project. </li>
