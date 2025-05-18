@@ -27,7 +27,7 @@ const Layout = ({ children }) => {
       <header id="header" className="header d-flex align-items-center light-background sticky-top">
         <div className="container-fluid position-relative d-flex align-items-center justify-content-between">
           <Link to="/" className="logo d-flex align-items-center me-auto me-xl-0">
-            <h1 className="sitename">Kelly</h1>
+            <h1 className="sitename">Sumit</h1>
           </Link>
 
           <nav id="navmenu" className="navmenu">
@@ -77,7 +77,7 @@ const Layout = ({ children }) => {
       <footer id="footer" className="footer light-background">
         <div className="container">
           <div className="copyright text-center">
-            <p>© <span>Copyright</span> <strong className="px-1 sitename">Kelly</strong> <span>All Rights Reserved<br /></span></p>
+            <p>{new Date().getFullYear()}© <span>Copyright</span> <strong className="px-1 sitename">Sumit</strong> <span>All Rights Reserved<br /></span></p>
           </div>
           <div className="social-links d-flex justify-content-center">
             <a href="https://twitter.com" target="_blank" rel="noopener noreferrer"><i className="bi bi-twitter-x"></i></a>
@@ -86,7 +86,7 @@ const Layout = ({ children }) => {
             <a href="https://linkedin.com" target="_blank" rel="noopener noreferrer"><i className="bi bi-linkedin"></i></a>
           </div>
           <div className="credits">
-            Designed by <a href="https://bootstrapmade.com/" target="_blank" rel="noopener noreferrer">BootstrapMade</a> Distributed by <a href="https://themewagon.com" target="_blank" rel="noopener noreferrer">ThemeWagon</a>
+            Designed by <a href="https://bootstrapmade.com/" target="_blank" rel="noopener noreferrer">Sumit</a> Distributed by <a href="https://themewagon.com" target="_blank" rel="noopener noreferrer">ThemeWagon</a>
           </div>
         </div>
       </footer>

@@ -8,7 +8,7 @@ const StarterPage = () => {
           <a href="index.html" className="logo d-flex align-items-center me-auto me-xl-0">
             {/* Uncomment the line below if you also wish to use an image logo */}
             {/* <img src="assets/img/logo.png" alt="" /> */}
-            <h1 className="sitename">Kelly</h1>
+            <h1 className="sitename">Sumit</h1>
           </a>
 
           <nav id="navmenu" className="navmenu">
@@ -69,7 +69,7 @@ const StarterPage = () => {
       <footer id="footer" className="footer light-background">
         <div className="container">
           <div className="copyright text-center">
-            <p>© <span>Copyright</span> <strong className="px-1 sitename">Kelly</strong> <span>All Rights Reserved</span></p>
+            <p>© <span>Copyright</span> <strong className="px-1 sitename">Sumit</strong> <span>All Rights Reserved</span></p>
           </div>
           <div className="social-links d-flex justify-content-center">
             <a href=""><i className="bi bi-twitter-x"></i></a>

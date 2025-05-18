@@ -8,7 +8,7 @@ const Contact = () => {
         <div className="container">
           <div className="section-header">
             <h2>Contact</h2>
-            <p>Ea vitae aspernatur deserunt voluptatem impedit deserunt magnam occaecati dssumenda quas ut ad dolores adipisci aliquam.</p>
+            <p>We’d love to hear from you! Whether you have a question, want to work together, or just want to say hello—feel free to reach out.</p>
           </div>
 
           <div className="row g-5">
@@ -17,7 +17,7 @@ const Contact = () => {
                 <i className="bi bi-geo-alt flex-shrink-0"></i>
                 <div>
                   <h4>Location:</h4>
-                  <p>A108 Adam Street, New York, NY 535022</p>
+                  <p>Ahmedabad, Gujarat ,India 380059</p>
                 </div>
               </div>
             </div>
@@ -27,7 +27,7 @@ const Contact = () => {
                 <i className="bi bi-envelope flex-shrink-0"></i>
                 <div>
                   <h4>Email:</h4>
-                  <p>info@example.com</p>
+                  <p>sadhusumit30@gmail.com</p>
                 </div>
               </div>
             </div>
@@ -37,7 +37,7 @@ const Contact = () => {
                 <i className="bi bi-phone flex-shrink-0"></i>
                 <div>
                   <h4>Call:</h4>
-                  <p>+1 5589 55488 55</p>
+                  <p>+91 6353899544</p>
                 </div>
               </div>
             </div>

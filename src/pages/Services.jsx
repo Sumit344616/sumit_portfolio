@@ -8,7 +8,7 @@ const Services = () => {
         <div className="container">
           <div className="section-header">
             <h2>Services</h2>
-            <p>Aperiam dolorum et et wuia molestias qui eveniet numquam nihil porro incidunt dolores placeat sunt id nobis omnis tiledo stran delop</p>
+            <p>Build responsive, scalable, and high-performance web applications using the MERN stack (MongoDB, Express.js, React.js, Node.js).</p>
           </div>
 
           <div className="row gy-5">
@@ -22,9 +22,9 @@ const Services = () => {
                     <i className="bi bi-activity"></i>
                   </div>
                   <a href="#" className="stretched-link">
-                    <h3>Nesciunt Mete</h3>
+                    <h3>Full Stack Web Development</h3>
                   </a>
-                  <p>Provident nihil minus qui consequatur non omnis maiores. Eos accusantium minus dolores iure perferendis.</p>
+                  <p>Build responsive, scalable, and high-performance web applications using the MERN stack (MongoDB, Express.js, React.js, Node.js).</p>
                 </div>
               </div>
             </div>
@@ -39,9 +39,10 @@ const Services = () => {
                     <i className="bi bi-broadcast"></i>
                   </div>
                   <a href="#" className="stretched-link">
-                    <h3>Eosle Commodi</h3>
+                    <h3>Backend API Development
+                    </h3>
                   </a>
-                  <p>Ut autem aut autem non a. Sint sint sit facilis nam iusto sint. Libero corrupti neque eum hic non ut nesciunt dolorem.</p>
+                  <p>Design and develop secure RESTful APIs, integrate third-party services, and implement robust authentication using JWT and middleware.</p>
                 </div>
               </div>
             </div>
@@ -56,9 +57,10 @@ const Services = () => {
                     <i className="bi bi-easel"></i>
                   </div>
                   <a href="#" className="stretched-link">
-                    <h3>Ledo Markt</h3>
+                    <h3>Frontend UI/UX Development
+                    </h3>
                   </a>
-                  <p>Ut excepturi voluptatem nisi sed. Quidem fuga consequatur. Minus ea aut. Vel qui id voluptas adipisci eos earum corrupti.</p>
+                  <p>Create interactive and visually appealing frontends with React.js, Tailwind CSS, and component-based architecture for seamless UX.</p>
                 </div>
               </div>
             </div>
@@ -73,9 +75,9 @@ const Services = () => {
                     <i className="bi bi-bounding-box-circles"></i>
                   </div>
                   <a href="#" className="stretched-link">
-                    <h3>Asperiores Commodit</h3>
+                    <h3>Cloud & Firebase Integration</h3>
                   </a>
-                  <p>Non et temporibus minus omnis sed dolor esse consequatur. Cupiditate sed error ea fuga sit provident adipisci neque.</p>
+                  <p>Set up real-time databases, cloud functions, notifications, and user authentication using Firebase and Google Cloud services.</p>
                   <a href="#" className="stretched-link"></a>
                 </div>
               </div>
@@ -91,9 +93,10 @@ const Services = () => {
                     <i className="bi bi-calendar4-week"></i>
                   </div>
                   <a href="#" className="stretched-link">
-                    <h3>Velit Doloremque</h3>
+                    <h3>Bug Fixing & Optimization
+                    </h3>
                   </a>
-                  <p>Cumque et suscipit saepe. Est maiores autem enim facilis ut aut ipsam corporis aut. Sed animi at autem alias eius labore.</p>
+                  <p>Identify and resolve performance bottlenecks, fix critical bugs, and ensure smooth deployment with CI/CD practices.</p>
                   <a href="#" className="stretched-link"></a>
                 </div>
               </div>
@@ -109,9 +112,9 @@ const Services = () => {
                     <i className="bi bi-chat-square-text"></i>
                   </div>
                   <a href="#" className="stretched-link">
-                    <h3>Dolori Architecto</h3>
+                    <h3>Admin Dashboards & Analytics</h3>
                   </a>
-                  <p>Hic molestias ea quibusdam eos. Fugiat enim doloremque aut neque non et debitis iure. Corrupti recusandae ducimus enim.</p>
+                  <p>Develop dynamic admin panels with charts, filtering, and real-time data visualization for better decision-making.</p>
                   <a href="#" className="stretched-link"></a>
                 </div>
               </div>

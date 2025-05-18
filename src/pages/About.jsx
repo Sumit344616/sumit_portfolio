@@ -8,7 +8,9 @@ const About = () => {
         <div className="container">
           <div className="section-header">
             <h2>About</h2>
-            <p>Aperiam dolorum et et wuia molestias qui eveniet numquam nihil porro incidunt dolores placeat sunt id nobis omnis tiledo stran delop</p>
+            <p>MERN Stack Developer from Ahmedabad
+
+I'm an experienced and results-driven Full Stack Web Developer with a strong foundation in MERN stack technologies — MongoDB, Express.js, React.js, and Node.js. I specialize in building efficient, scalable, and user-friendly web applications.</p>
           </div>
 
           <div className="row gy-4 justify-content-center">
@@ -41,12 +43,10 @@ const About = () => {
                 </div>
               </div>
               <p className="py-3">
-                Officiis eligendi itaque labore et dolorum mollitia officiis optio vero. Quisquam sunt adipisci omnis et ut. Nulla accusantium dolor incidunt officia tempore. Et eius omnis.
-                Cupiditate ut dicta maxime officiis quidem quia. Sed et consectetur qui quia repellendus itaque neque. Aliquid amet quidem ut quaerat cupiditate. Ab et eum qui repellendus omnis culpa magni laudantium dolores.
+              Experienced and results-driven Full Stack Developer with a strong foundation in MERN stack technologies (MongoDB, Express.js, React.js, Node.js).Proficient in integrating Google Cloud services, Firebase (real-time database, notifications), and third-party APIs, including social login and Android subscriptions. 
               </p>
               <p className="m-0">
-                Recusandae est praesentium consequatur eos voluptatem. Vitae dolores aliquam itaque odio nihil. Neque ut neque ut quae voluptas. Maxime corporis aut ut ipsum consequatur. Repudiandae sunt sequi minus qui et. Doloribus molestiae officiis.
-                Soluta eligendi fugiat provident soluta consequatur. Omnis fugiat ut. Ut ut illum aut doloremque. Quos ut sunt ut. Ut ut illum aut doloremque. Quos ut sunt ut.
+              Adept at both frontend and backend development, with hands-on expertise in developing e-commerce platforms, admin panels, chat systems using Socket.IO, and robust backend architectures. Committed to delivering optimized user experiences and clean, maintainable code.
               </p>
             </div>
           </div>
