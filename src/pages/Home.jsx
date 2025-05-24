@@ -92,7 +92,18 @@ const Home = () => {
 
   return (
     <Layout>
-      <section id="hero" className="hero">
+      <section
+        id="hero"
+        className="hero"
+        style={{
+          backgroundImage: "url('/assets/img/back.jpg')",
+          backgroundSize: "cover",
+          backgroundPosition: "center",
+          minHeight: "100vh", // Full viewport height
+          display: "flex",
+          alignItems: "center"
+        }}
+      >
         <div className="container">
           <div className="row align-items-center">
             <div className="col-lg-6">
@@ -106,15 +117,6 @@ const Home = () => {
                   Contact Me
                 </Link>
               </div>
-            </div>
-            <div className="col-lg-6">
-              <img
-                src="/assets/img/back.jpg"
-                alt=""
-                className="img-fluid"
-                data-aos="zoom-in"
-                data-aos-delay="200"
-              />
             </div>
           </div>
         </div>
@@ -842,7 +844,7 @@ const Home = () => {
           <div className="section-header">
             <h2>Contact</h2>
             <p>
-            We’d love to hear from you! Whether you have a question, want to work together, or just want to say hello—feel free to reach out.
+            We'd love to hear from you! Whether you have a question, want to work together, or just want to say hello—feel free to reach out.
             </p>
           </div>
 

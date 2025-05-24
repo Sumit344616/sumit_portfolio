@@ -64,8 +64,8 @@ const Layout = ({ children }) => {
           <div className="header-social-links">
             <a href="https://twitter.com" target="_blank" rel="noopener noreferrer" className="twitter"><i className="bi bi-twitter-x"></i></a>
             <a href="https://facebook.com" target="_blank" rel="noopener noreferrer" className="facebook"><i className="bi bi-facebook"></i></a>
-            <a href="https://instagram.com" target="_blank" rel="noopener noreferrer" className="instagram"><i className="bi bi-instagram"></i></a>
-            <a href="https://linkedin.com" target="_blank" rel="noopener noreferrer" className="linkedin"><i className="bi bi-linkedin"></i></a>
+            <a href="https://www.instagram.com/itz_sumit_3.0/" target="_blank" rel="noopener noreferrer" className="instagram"><i className="bi bi-instagram"></i></a>
+            <a href="https://www.linkedin.com/in/sumit-sadhu-983041216/" target="_blank" rel="noopener noreferrer" className="linkedin"><i className="bi bi-linkedin"></i></a>
           </div>
         </div>
       </header>
@@ -82,8 +82,8 @@ const Layout = ({ children }) => {
           <div className="social-links d-flex justify-content-center">
             <a href="https://twitter.com" target="_blank" rel="noopener noreferrer"><i className="bi bi-twitter-x"></i></a>
             <a href="https://facebook.com" target="_blank" rel="noopener noreferrer"><i className="bi bi-facebook"></i></a>
-            <a href="https://instagram.com" target="_blank" rel="noopener noreferrer"><i className="bi bi-instagram"></i></a>
-            <a href="https://linkedin.com" target="_blank" rel="noopener noreferrer"><i className="bi bi-linkedin"></i></a>
+            <a href="https://www.instagram.com/itz_sumit_3.0/" target="_blank" rel="noopener noreferrer"><i className="bi bi-instagram"></i></a>
+            <a href="https://www.linkedin.com/in/sumit-sadhu-983041216/" target="_blank" rel="noopener noreferrer"><i className="bi bi-linkedin"></i></a>
           </div>
           <div className="credits">
             Designed by <a href="https://bootstrapmade.com/" target="_blank" rel="noopener noreferrer">Sumit</a> Distributed by <a href="https://themewagon.com" target="_blank" rel="noopener noreferrer">ThemeWagon</a>
