@@ -8,44 +8,106 @@ const ServiceDetails = () => {
   const { id } = useParams();
   const navigate = useNavigate();
 
-  // Service data - you can move this to a separate file or fetch from an API
-  const servicesData = {
+  const services = {
     'full-stack': {
       title: 'Full Stack Web Development',
       icon: 'bi-activity',
       image: '/assets/img/services1.jpg',
-      description: 'Build responsive, scalable, and high-performance web applications using the MERN stack.',
+      description: 'Build responsive, scalable, and high-performance web applications using the MERN stack (MongoDB, Express.js, React.js, Node.js).',
       features: [
-        'Custom web application development',
-        'Responsive design implementation',
-        'Database design and optimization',
-        'API development and integration',
-        'Performance optimization',
-        'Security implementation'
+        'Complete MERN Stack Development',
+        'Responsive Web Design',
+        'Database Design & Implementation',
+        'API Integration',
+        'Authentication & Authorization',
+        'Performance Optimization',
+        'Deployment & Hosting'
       ],
-      technologies: ['MongoDB', 'Express.js', 'React.js', 'Node.js', 'Redux', 'Socket.IO'],
-      longDescription: `We specialize in building robust and scalable web applications using the MERN stack. Our full-stack development services ensure that your application is not only visually appealing but also performs exceptionally well. We handle everything from frontend development to backend architecture, ensuring a seamless user experience.`
+      technologies: ['MongoDB', 'Express.js', 'React.js', 'Node.js', 'JavaScript', 'HTML5', 'CSS3', 'Git']
     },
     'backend-api': {
       title: 'Backend API Development',
       icon: 'bi-broadcast',
       image: '/assets/img/services2.jpg',
-      description: 'Design and develop secure RESTful APIs with robust authentication.',
+      description: 'Design and develop secure RESTful APIs, integrate third-party services, and implement robust authentication using JWT and middleware.',
       features: [
-        'RESTful API development',
-        'Authentication & Authorization',
-        'Database integration',
-        'API documentation',
-        'Performance optimization',
-        'Security implementation'
+        'RESTful API Design',
+        'JWT Authentication',
+        'Middleware Implementation',
+        'Database Integration',
+        'Third-party API Integration',
+        'API Documentation',
+        'Security Implementation'
       ],
-      technologies: ['Node.js', 'Express.js', 'MongoDB', 'JWT', 'OAuth', 'Swagger'],
-      longDescription: `Our backend development services focus on creating secure, scalable, and efficient APIs that power your applications. We implement best practices for authentication, data validation, and error handling to ensure your backend is robust and reliable.`
+      technologies: ['Node.js', 'Express.js', 'MongoDB', 'JWT', 'Postman', 'Swagger', 'Git']
     },
-    // Add other services similarly
+    'frontend': {
+      title: 'Frontend UI/UX Development',
+      icon: 'bi-easel',
+      image: '/assets/img/services3.jpg',
+      description: 'Create interactive and visually appealing frontends with React.js, Tailwind CSS, and component-based architecture for seamless UX.',
+      features: [
+        'Responsive Design',
+        'Component-Based Architecture',
+        'State Management',
+        'UI/UX Implementation',
+        'Cross-browser Compatibility',
+        'Performance Optimization',
+        'Accessibility Implementation'
+      ],
+      technologies: ['React.js', 'Tailwind CSS', 'JavaScript', 'HTML5', 'CSS3', 'Redux', 'Git']
+    },
+    'cloud': {
+      title: 'Cloud & Firebase Integration',
+      icon: 'bi-bounding-box-circles',
+      image: '/assets/img/services4.jpg',
+      description: 'Set up real-time databases, cloud functions, notifications, and user authentication using Firebase and Google Cloud services.',
+      features: [
+        'Firebase Integration',
+        'Real-time Database Setup',
+        'Cloud Functions',
+        'Authentication Services',
+        'Cloud Storage',
+        'Push Notifications',
+        'Analytics Integration'
+      ],
+      technologies: ['Firebase', 'Google Cloud', 'Node.js', 'JavaScript', 'Cloud Functions', 'Firestore']
+    },
+    'optimization': {
+      title: 'Bug Fixing & Optimization',
+      icon: 'bi-calendar4-week',
+      image: '/assets/img/services5.jpg',
+      description: 'Identify and resolve performance bottlenecks, fix critical bugs, and ensure smooth deployment with CI/CD practices.',
+      features: [
+        'Performance Optimization',
+        'Bug Fixing',
+        'Code Refactoring',
+        'CI/CD Implementation',
+        'Testing & Quality Assurance',
+        'Security Audits',
+        'Documentation'
+      ],
+      technologies: ['JavaScript', 'Node.js', 'Git', 'CI/CD Tools', 'Testing Frameworks', 'Debugging Tools']
+    },
+    'admin': {
+      title: 'Admin Dashboards & Analytics',
+      icon: 'bi-chat-square-text',
+      image: '/assets/img/services6.jpg',
+      description: 'Develop dynamic admin panels with charts, filtering, and real-time data visualization for better decision-making.',
+      features: [
+        'Dashboard Development',
+        'Data Visualization',
+        'Real-time Updates',
+        'User Management',
+        'Analytics Integration',
+        'Report Generation',
+        'Custom Filtering'
+      ],
+      technologies: ['React.js', 'Chart.js', 'Node.js', 'MongoDB', 'Express.js', 'Tailwind CSS']
+    }
   };
 
-  const service = servicesData[id];
+  const service = services[id];
 
   useEffect(() => {
     AOS.init({
@@ -108,7 +170,7 @@ const ServiceDetails = () => {
             <div className="row">
               <div className="col-lg-8" data-aos="fade-up">
                 <h2 className="mb-4">What We Offer</h2>
-                <p className="lead mb-5">{service.longDescription}</p>
+                <p className="lead mb-5">{service.description}</p>
                 
                 <div className="features-grid">
                   {service.features.map((feature, index) => (

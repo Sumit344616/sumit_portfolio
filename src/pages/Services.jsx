@@ -53,8 +53,8 @@ const Services = () => {
       <section id="services" className="services">
         <div className="container">
           <div className="section-header">
-            <h2>Services</h2>
-            <p>Build responsive, scalable, and high-performance web applications using the MERN stack (MongoDB, Express.js, React.js, Node.js).</p>
+            <h2>Our Services</h2>
+            <p>Explore our comprehensive range of web development and technology services</p>
           </div>
 
           <div className="row gy-5">
@@ -76,6 +76,10 @@ const Services = () => {
                       </div>
                       <h3>{service.title}</h3>
                       <p>{service.description}</p>
+                      <div className="read-more">
+                        <span>Learn More</span>
+                        <i className="bi bi-arrow-right"></i>
+                      </div>
                     </div>
                   </div>
                 </Link>

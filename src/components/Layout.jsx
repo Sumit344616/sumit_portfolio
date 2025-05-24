@@ -1,4 +1,4 @@
-import React, { useEffect } from 'react';
+import React, { useEffect, useState } from 'react';
 import { Link, useLocation } from 'react-router-dom';
 import Preloader from './Preloader';
 import AOS from 'aos';
@@ -6,6 +6,7 @@ import 'aos/dist/aos.css';
 
 const Layout = ({ children }) => {
   const location = useLocation();
+  const [isMobileNavActive, setIsMobileNavActive] = useState(false);
 
   useEffect(() => {
     // Initialize AOS
@@ -20,6 +21,16 @@ const Layout = ({ children }) => {
     AOS.refresh();
   }, [location]);
 
+  const toggleMobileNav = () => {
+    setIsMobileNavActive(!isMobileNavActive);
+    document.body.classList.toggle('mobile-nav-active');
+  };
+
+  const closeMobileNav = () => {
+    setIsMobileNavActive(false);
+    document.body.classList.remove('mobile-nav-active');
+  };
+
   return (
     <div className="index-page">
       <Preloader />
@@ -30,35 +41,39 @@ const Layout = ({ children }) => {
             <h1 className="sitename">Sumit</h1>
           </Link>
 
-          <nav id="navmenu" className="navmenu">
+          <i 
+            className={`mobile-nav-toggle d-xl-none bi ${isMobileNavActive ? 'bi-x' : 'bi-list'}`}
+            onClick={toggleMobileNav}
+          ></i>
+
+          <nav id="navmenu" className={`navmenu ${isMobileNavActive ? 'mobile-nav-active' : ''}`}>
             <ul>
-              <li><Link to="/" className={location.pathname === '/' ? 'active' : ''}>Home</Link></li>
-              <li><Link to="/about" className={location.pathname === '/about' ? 'active' : ''}>About</Link></li>
-              <li><Link to="/resume" className={location.pathname === '/resume' ? 'active' : ''}>Resume</Link></li>
-              <li><Link to="/services" className={location.pathname === '/services' ? 'active' : ''}>Services</Link></li>
-              <li><Link to="/portfolio" className={location.pathname === '/portfolio' ? 'active' : ''}>Portfolio</Link></li>
+              <li><Link to="/" onClick={closeMobileNav} className={location.pathname === '/' ? 'active' : ''}>Home</Link></li>
+              <li><Link to="/about" onClick={closeMobileNav} className={location.pathname === '/about' ? 'active' : ''}>About</Link></li>
+              <li><Link to="/resume" onClick={closeMobileNav} className={location.pathname === '/resume' ? 'active' : ''}>Resume</Link></li>
+              <li><Link to="/services" onClick={closeMobileNav} className={location.pathname === '/services' ? 'active' : ''}>Services</Link></li>
+              <li><Link to="/portfolio" onClick={closeMobileNav} className={location.pathname === '/portfolio' ? 'active' : ''}>Portfolio</Link></li>
               <li className="dropdown">
                 <a href="#"><span>Dropdown</span> <i className="bi bi-chevron-down toggle-dropdown"></i></a>
                 <ul>
-                  <li><a href="#">Dropdown 1</a></li>
+                  <li><a href="#" onClick={closeMobileNav}>Dropdown 1</a></li>
                   <li className="dropdown">
                     <a href="#"><span>Deep Dropdown</span> <i className="bi bi-chevron-down toggle-dropdown"></i></a>
                     <ul>
-                      <li><a href="#">Deep Dropdown 1</a></li>
-                      <li><a href="#">Deep Dropdown 2</a></li>
-                      <li><a href="#">Deep Dropdown 3</a></li>
-                      <li><a href="#">Deep Dropdown 4</a></li>
-                      <li><a href="#">Deep Dropdown 5</a></li>
+                      <li><a href="#" onClick={closeMobileNav}>Deep Dropdown 1</a></li>
+                      <li><a href="#" onClick={closeMobileNav}>Deep Dropdown 2</a></li>
+                      <li><a href="#" onClick={closeMobileNav}>Deep Dropdown 3</a></li>
+                      <li><a href="#" onClick={closeMobileNav}>Deep Dropdown 4</a></li>
+                      <li><a href="#" onClick={closeMobileNav}>Deep Dropdown 5</a></li>
                     </ul>
                   </li>
-                  <li><a href="#">Dropdown 2</a></li>
-                  <li><a href="#">Dropdown 3</a></li>
-                  <li><a href="#">Dropdown 4</a></li>
+                  <li><a href="#" onClick={closeMobileNav}>Dropdown 2</a></li>
+                  <li><a href="#" onClick={closeMobileNav}>Dropdown 3</a></li>
+                  <li><a href="#" onClick={closeMobileNav}>Dropdown 4</a></li>
                 </ul>
               </li>
-              <li><Link to="/contact" className={location.pathname === '/contact' ? 'active' : ''}>Contact</Link></li>
+              <li><Link to="/contact" onClick={closeMobileNav} className={location.pathname === '/contact' ? 'active' : ''}>Contact</Link></li>
             </ul>
-            <i className="mobile-nav-toggle d-xl-none bi bi-list"></i>
           </nav>
 
           <div className="header-social-links">

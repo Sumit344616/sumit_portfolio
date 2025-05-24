@@ -452,14 +452,35 @@ h6 {
 
   .mobile-nav-active .navmenu {
     position: fixed;
-    overflow: hidden;
-    inset: 0;
-    background: rgba(33, 37, 41, 0.8);
+    top: 0;
+    right: 0;
+    bottom: 0;
+    width: 300px;
+    overflow-y: auto;
+    background: var(--nav-mobile-background-color);
     transition: 0.3s;
+    z-index: 9998;
+    box-shadow: -5px 0 15px rgba(0, 0, 0, 0.1);
   }
 
   .mobile-nav-active .navmenu>ul {
     display: block;
+    position: static;
+    inset: auto;
+    padding: 10px 0;
+    margin: 0;
+    background-color: transparent;
+    border: none;
+    box-shadow: none;
+    overflow-y: visible;
+    transition: none;
+  }
+
+  /* Add overlay when mobile nav is active */
+  .mobile-nav-active::before {
+    position: fixed;
+    inset: 0;
+    background: rgba(0, 0, 0, 0.6);
   }
 }
 
