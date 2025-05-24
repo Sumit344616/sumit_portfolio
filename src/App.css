@@ -1421,3 +1421,15 @@ section,
 .starter-section {
   /* Add your styles here */
 }
+
+.about ul li span {
+  display: inline-block;
+  max-width: 200px; /* Adjust as needed */
+  word-break: break-all;
+  vertical-align: middle;
+}
+@media (max-width: 768px) {
+  .about ul li span {
+    max-width: 100%;
+  }
+}

@@ -1,8 +1,9 @@
-import React, { useEffect } from "react";
+import React, { useEffect, useState } from "react";
 import { Link } from "react-router-dom";
 import "bootstrap/dist/css/bootstrap.min.css";
 import "bootstrap-icons/font/bootstrap-icons.css";
 import "../assets/css/main.css";
+import Typewriter from 'typewriter-effect';
 
 // Import vendor scripts
 import "bootstrap/dist/js/bootstrap.bundle.min.js";
@@ -17,14 +18,25 @@ import { Navigation, Pagination } from "swiper/modules";
 import Layout from "../components/Layout";
 
 const Home = () => {
+  const [scrollY, setScrollY] = useState(0);
+
   useEffect(() => {
-    // Initialize AOS
+    // Initialize AOS with enhanced settings
     AOS.init({
       duration: 1000,
       easing: "ease-in-out",
       once: true,
       mirror: false,
+      offset: 50,
     });
+
+    // Parallax effect for hero section
+    const handleScroll = () => {
+      setScrollY(window.scrollY);
+    };
+
+    window.addEventListener("scroll", handleScroll);
+    return () => window.removeEventListener("scroll", handleScroll);
 
     // Initialize Isotope
     const grid = document.querySelector(".portfolio-grid");
@@ -99,22 +111,59 @@ const Home = () => {
           backgroundImage: "url('/assets/img/back.jpg')",
           backgroundSize: "cover",
           backgroundPosition: "center",
-          minHeight: "100vh", // Full viewport height
+          minHeight: "100vh",
           display: "flex",
-          alignItems: "center"
+          alignItems: "center",
+          position: "relative",
+          overflow: "hidden",
         }}
       >
-        <div className="container">
+        <div 
+          className="hero-overlay"
+          style={{
+            position: "absolute",
+            top: 0,
+            left: 0,
+            right: 0,
+            bottom: 0,
+            background: "rgba(0, 0, 0, 0.5)",
+            transform: `translateY(${scrollY * 0.5}px)`,
+          }}
+        />
+        <div className="container position-relative">
           <div className="row align-items-center">
             <div className="col-lg-6">
-              <h2 data-aos="fade-up">Hi, I'm Sumit</h2>
-              <p data-aos="fade-up" data-aos-delay="100">
+              <h2 
+                data-aos="fade-up" 
+                className="display-4 fw-bold text-white mb-4"
+              >
+                <Typewriter
+                  options={{
+                    strings: ["Hi, I'm Sumit", "MERN Stack Developer"],
+                    autoStart: true,
+                    loop: true,
+                    deleteSpeed: 50,
+                  }}
+                />
+              </h2>
+              <p 
+                data-aos="fade-up" 
+                data-aos-delay="100"
+                className="lead text-white mb-4"
+              >
                 I'm a MERN STACK DEVELOPER FROM AHMEDABAD City, specializing in
                 fashion, portrait, and commercial photography.
               </p>
-              <div data-aos="fade-up" data-aos-delay="200">
-                <Link to="/contact" className="btn-custom">
+              <div 
+                data-aos="fade-up" 
+                data-aos-delay="200"
+                className="d-flex gap-3"
+              >
+                <Link to="/contact" className="btn-custom btn-glow">
                   Contact Me
+                </Link>
+                <Link to="/portfolio" className="btn-custom btn-outline">
+                  View My Work
                 </Link>
               </div>
             </div>
@@ -317,7 +366,7 @@ const Home = () => {
             <div className="col-xl-4 col-md-6" data-aos="zoom-in" data-aos-delay="200">
               <div className="service-item">
                 <div className="img">
-                  <img src="/assets/img/services-1.jpg" className="img-fluid" alt="" />
+                  <img src="/assets/img/services1.jpg" className="img-fluid" alt="" />
                 </div>
                 <div className="details position-relative">
                   <div className="icon">
@@ -334,7 +383,7 @@ const Home = () => {
             <div className="col-xl-4 col-md-6" data-aos="zoom-in" data-aos-delay="400">
               <div className="service-item">
                 <div className="img">
-                  <img src="/assets/img/services-2.jpg" className="img-fluid" alt="" />
+                  <img src="/assets/img/services2.jpg" className="img-fluid" alt="" />
                 </div>
                 <div className="details position-relative">
                   <div className="icon">
@@ -352,7 +401,7 @@ const Home = () => {
             <div className="col-xl-4 col-md-6" data-aos="zoom-in" data-aos-delay="600">
               <div className="service-item">
                 <div className="img">
-                  <img src="/assets/img/services-3.jpg" className="img-fluid" alt="" />
+                  <img src="/assets/img/services3.jpg" className="img-fluid" alt="" />
                 </div>
                 <div className="details position-relative">
                   <div className="icon">
@@ -370,7 +419,7 @@ const Home = () => {
             <div className="col-xl-4 col-md-6" data-aos="zoom-in" data-aos-delay="200">
               <div className="service-item">
                 <div className="img">
-                  <img src="/assets/img/services-4.jpg" className="img-fluid" alt="" />
+                  <img src="/assets/img/services4.jpg" className="img-fluid" alt="" />
                 </div>
                 <div className="details position-relative">
                   <div className="icon">
@@ -388,7 +437,7 @@ const Home = () => {
             <div className="col-xl-4 col-md-6" data-aos="zoom-in" data-aos-delay="400">
               <div className="service-item">
                 <div className="img">
-                  <img src="/assets/img/services-5.jpg" className="img-fluid" alt="" />
+                  <img src="/assets/img/services5.jpg" className="img-fluid" alt="" />
                 </div>
                 <div className="details position-relative">
                   <div className="icon">
@@ -407,7 +456,7 @@ const Home = () => {
             <div className="col-xl-4 col-md-6" data-aos="zoom-in" data-aos-delay="600">
               <div className="service-item">
                 <div className="img">
-                  <img src="/assets/img/services-6.jpg" className="img-fluid" alt="" />
+                  <img src="/assets/img/services6.jpg" className="img-fluid" alt="" />
                 </div>
                 <div className="details position-relative">
                   <div className="icon">

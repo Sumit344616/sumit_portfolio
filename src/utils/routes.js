@@ -4,6 +4,7 @@ import Home from "../pages/Home";
 import Portfolio from "../pages/Portfolio";
 import PortfolioDetails from "../pages/PortfolioDetails";
 import Resume from "../pages/Resume";
+import ServiceDetails from "../pages/ServiceDetails";
 import Services from "../pages/Services";
 import StarterPage from "../pages/StarterPage";
 
@@ -39,6 +40,10 @@ const routes=[
     {
         path: '/starter',
         element: <StarterPage />
-    }
+    },
+    {
+        path: '/services/:id',
+        element: <ServiceDetails />
+      },
 ]
 export default routes;
